@@ -42,7 +42,6 @@ buttons[3].addEventListener("click", () => {
 
 //===============WEATHER HANDLER===========================================
 
-const API_KEY = "c29809bc2d13c52c470e4a0c3fd4a558"; 
 
 const cityInput = document.getElementById("cityInput");
 const getWeatherBtn = document.getElementById("getWeatherBtn");
@@ -54,7 +53,7 @@ const conditionEl = document.getElementById("condition");
 
 
 function fetchWeather(city) {
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&units=metric&appid=${API_KEY}`;
+  const url = `/api/weather?city=${encodeURIComponent(city)}`;
 
   fetch(url)
     .then(res => {
@@ -67,7 +66,7 @@ function fetchWeather(city) {
       conditionEl.textContent = data.weather[0].description;
     })
     .catch(() => {
-      locationEl.textContent = "Couldn't find that city 😢";
+      locationEl.textContent = "Couldn't find that city";
       tempEl.textContent = "";
       conditionEl.textContent = "";
     });
