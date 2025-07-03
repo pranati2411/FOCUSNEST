@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FocusNest Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topper">
+    <div class="back">
+      <a href="../index.html">BACK</a>
+    </div>
+    <div class="heading"><h2>TASK MANAGER</h2></div>
+  </div>
+
+  <div class="task-container">
+    <div class="task-card">
+      <h2>Personal 🏡</h2>
+      <button class="add-btn" onclick="openModal('personal')">+</button>
+      <ul id="personalTasks"></ul>
+    </div>
+
+    <div class="task-card">
+      <h2>Work 💼</h2>
+      <button class="add-btn" onclick="openModal('work')">+</button>
+      <ul id="workTasks"></ul>
+    </div>
+  </div>
+
+  <div class="modal" id="taskModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h3 id="modalTitle">Add Task</h3>
+      <input type="text" id="taskInput" placeholder="Task Title">
+      <textarea id="taskDesc" placeholder="Optional Description"></textarea>
+      <button onclick="addTask()">Add</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

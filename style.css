@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    background-color: #060606;
+    color: whitesmoke;
+    font-family: "Truculenta", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.entrance
+{
+    height: 100vh;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.entrance img{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.nav{
+    text-align: center;
+    margin-top: 15px;
+    width: 100%;
+    justify-content: center;
+    font-size: 20px;
+    display: flex;
+    gap: 300px;
+    position: absolute;
+    top:0;
+}
+
+.pit:hover{
+    color: #363434;
+    transition-duration: 1s;
+}
+
+.pit a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero{
+    font-size: 175px;
+    position: absolute;
+    bottom: -100px;
+    left: 30px;
+}
+
+.fac{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    width: fit-content;
+    margin: 20vh  auto;
+    background-color: #7fdcf154;
+    border-radius: 40px;
+}
+
+.fac{
+    display: flex;
+    flex-direction: row;
+    padding: 3px 90px 3px 3px;
+    gap: 50px;
+    justify-content: left;
+}
+.inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    height: 80%;
+    width: 450px;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.inner h2{
+    font-size: 55px;
+}
+
+.inner a{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.inner a:hover{
+    color: rgb(0,0,0,0.6);
+    transform: scale(1.2);
+}
+.inner p{
+    font-size: 20px;
+}
+
+.fac img{
+    border-radius: 40px;
+    height: 100%;
+}
+
+
+.pipofirst img {
+    height: 60px;
+}
